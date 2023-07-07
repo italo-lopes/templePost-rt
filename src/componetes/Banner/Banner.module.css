@@ -1,9 +1,10 @@
 .banner {
-    padding: 3rem 7.5rem 6.25rem;
+    padding: 3rem 7.5rem 7.25rem;
     background-color: var(--azul-escuro);
     color: var(--branco);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .titulo {
@@ -24,7 +25,8 @@
 .imagens {  
     position: relative;
     box-sizing: border-box;
-    height: 406px;
+    height: 306px;
+    margin-bottom: 2rem;
 
 }
 

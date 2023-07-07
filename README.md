@@ -1,3 +1,12 @@
+# Foto do Projeto
+    INICIO
+<img src="fotoDoProjeto1.PNG" width="800" /> 
+
+    POST/sobremim
+<img src="fotoDoProjeto2.PNG" width="800" /> 
+
+    ERRO
+<img src="fotoDoProjeto3.PNG" width="800" /> 
 # Rotas aninhamento - dinamico
 
     widow.lacation  window.location.pathname === "/" ? <ProjetoIncial /> : <SobreMim/>
@@ -69,6 +78,26 @@ onClick={()=>navega(-1)} - volta uma pagina anterior
 
 
 Route 
+
+
+
+usao do scrollToTop para logica de route necessario
+# metodos 
+
+slice() - pegar qualtidade no array
+
+    O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original. O Array original não é modificado.
+
+sort() - ordenar (a-b)=>a.id-b-id
+
+    O método sort() ordena os elementos do próprio array e retorna o array.
+
+filter() - filtrar array
+
+    O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+    map() - transformar array
+
+useEffect quando tem uma mudança em uma constante
 
 # dependeciass adicionadas
 

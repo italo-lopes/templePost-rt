@@ -7,6 +7,7 @@ import Rodape from 'componetes/Rodape';
 import PaginaPadrao from 'componetes/PaginaPadrao';
 import Post from 'componetes/Post';
 import NaoEncontrada from 'componetes/NaoEncontrada';
+import ScrollToTop from 'componetes/ScrollToTop';
 
 
 console.log(window.location)
@@ -46,9 +47,12 @@ console.log(window.location)
 //e ao erro - post =  menu+(post) erro + rodape
 // <Route path="posts/:postId/*" element={<Post/>}/>
 //quando tite um route chamando no comp outro route pai usar o *
+
+// 16 router utilizaçao de  <ScrollToTop/>
 function AppRoutes() {
   return (
   <BrowserRouter>
+    <ScrollToTop/>
      <Menu/>
     <Routes>
 

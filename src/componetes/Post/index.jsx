@@ -25,18 +25,19 @@ const Post = () => {
     //posts.length 
     const elimina1= parseInt(Math.random() * posts.length)
     const elimina2= parseInt(Math.random() * posts.length)
-    let num =0 ;
     const postRecomendado = posts.filter((element,index)=>{
           if(element.id !== post.id && 
-            num < 4 && 
             elimina1 !== element.id && 
             elimina2 !== element.id 
             ){
-            num++
+
             return element
           } 
           return false
-    })
+    }).sort((a,b) => b.id - a.id).slice(0,4)
+
+    // como selecionar o numero de elementos que eu quero pegar
+    //slice()
     console.table(postRecomendado)
 
    // console.log(parameto);
@@ -56,7 +57,10 @@ const Post = () => {
                               {post.texto}
                               </ReactMarkdown>
                             </div>
-                            <ul>
+                            <h2 className={style.tituloOutrosPosts}>
+                            Outros posts que você pode gostar:
+                            </h2>
+                            <ul className={style.postsRecomendados}>
                              {postRecomendado.map((elemento)=>{ return(
                               <li key = {elemento.id} >
                                 <PostCard
