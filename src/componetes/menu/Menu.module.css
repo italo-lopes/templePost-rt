@@ -1,0 +1,40 @@
+.navegacao {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    
+}
+
+button.link {
+    background-color :rgba(137, 43, 226, 0.123);
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 744px) {
+    .navegacao {
+        height: 72px;
+    }
+}
+
+.colecao{
+      position: relative;
+}
+
+.lista{
+    margin:  0.3rem 0rem;
+    position: absolute;
+    width: 10rem;
+    background-color: rgba(137, 43, 226, 0.123); 
+    top : 42px;     
+    color: red;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+

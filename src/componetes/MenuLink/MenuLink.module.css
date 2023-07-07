@@ -1,0 +1,10 @@
+
+.linkDecoracao{
+    text-decoration: underline;
+}
+
+.link {
+    font-size: 1.25rem;
+   
+    color: var(--cor-fonte-principal);
+}

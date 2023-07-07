@@ -1,0 +1,124 @@
+.banner {
+    padding: 3rem 7.5rem 6.25rem;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 4rem;
+    margin-top: 4.875rem;
+    margin-bottom: 2rem;
+}
+
+.paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.imagens {  
+    position: relative;
+    box-sizing: border-box;
+    height: 406px;
+
+}
+
+.imagens > .minhaFoto {
+    position: absolute;
+    right: 8.2rem;
+    bottom: -5rem;   
+    width: 15.8vw;
+    border-radius: 10%;
+
+}
+
+.imagens > .circuloColorido {
+    position: absolute;
+    right:6.5vw;
+    bottom: -4.6rem;  
+    width: 21vw;
+    border-radius: 20%;
+
+}
+
+@media (max-width: 1400px) {    
+    .banner {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .titulo {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+  
+    }
+
+    .paragrafo {
+        margin-bottom: 1.5rem;
+       
+    }
+
+    .imagens {
+        height: 538px;
+        margin-left: 1.5rem;
+        width: 418px;
+
+        
+    }
+
+    .imagens > .minhaFoto {
+        width: 17vw;
+        bottom: 0.5rem;
+    }
+
+    .imagens > .circuloColorido {
+        display: none;
+        right: 10vw;
+        width: 35vw;
+    }
+}
+
+@media (max-width: 1244px) {
+    .banner {
+        padding: 2rem 1rem;
+        display: block;
+    }
+
+    .titulo {
+        margin-bottom: 2rem;
+    }
+
+    .paragrafo {
+        margin-bottom: 2rem;
+
+    }
+
+    .imagens {
+        height: 307px;
+        box-sizing: border-box;
+    }
+
+    .imagens > .minhaFoto, .imagens > .circuloColorido {
+        left: 0;
+        right: 112rem;
+        margin: 0 auto;
+    }
+
+    .imagens > .minhaFoto {
+        width: 190px;   
+        bottom: 0.4rem;
+        right: 17rem;
+        transform: translate(5rem, 0px);
+    }
+
+    .imagens > .circuloColorido {
+        display: none;
+        width: 260px;
+        right: -1.5rem;
+        transform: translate(-1.5rem, 0px);
+    }
+}

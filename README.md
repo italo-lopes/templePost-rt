@@ -1,3 +1,31 @@
+# Rotas aninhamento
+
+Outlet
+
+BrowserRoute
+
+Routes
+
+Route 
+
+rotasfixa - rotas pai - rotas  filhas
+
+Route path='/'
+
+-Route index 
+
+-Route 'sobremim'
+
+-Route path = '/post/:id'
+
+-Route path="*" element - url nao exite
+
+# ReactMarkdown
+ npm intall react-markdown
+
+ import ReactMarkdown from 'react-markdown'
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
