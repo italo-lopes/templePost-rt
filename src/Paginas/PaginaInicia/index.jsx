@@ -3,6 +3,7 @@ import style from'./PaginaInicial.module.css'
 import posts from 'json/posts.json'
 import PostCard from 'componetes/PostCard';
 
+
 const PaginaInicial = () => {
     console.table(posts)
     //const v = "assets/posts/1/capa.png"
@@ -12,9 +13,11 @@ const PaginaInicial = () => {
                 {posts.map((elemento)=> {
                     return(
                     <li className={style.post} key={elemento.id}>
+
                         <PostCard
                             elemento={elemento}
                         />
+                      
                     </li>
                     )
                  })}

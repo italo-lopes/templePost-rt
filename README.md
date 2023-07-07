@@ -1,4 +1,18 @@
-# Rotas aninhamento
+# Rotas aninhamento - dinamico
+
+    widow.lacation  window.location.pathname === "/" ? <ProjetoIncial /> : <SobreMim/>
+     
+# Colocando uma biblioteca de rotas  
+    intalar / npm install react-router-dom@6 /
+
+importa BrowserRouter - router 
+
+<h3>Mudamos o nome do APP pra AppRoutes from ./routes AppRoutes;</h3>
+
+funcionamento depende de routes
+
+Algumas funcionalidades nao precisa ta dentro de Routes
+
 
 Outlet
 
@@ -18,7 +32,49 @@ Route path='/'
 
 -Route path = '/post/:id'
 
--Route path="*" element - url nao exite
+
+
+    Route path="*" element - url nao exite
+    NavLink -> isActive
+    Link-
+    useParams
+    useLocation
+    useNavigate
+
+
+Svg Ai a gente trabalhar com svg a gente trata como componente
+
+import {ReactComponent as NomeComponete} from '/url/nome'
+
+     A sintaxe import { ReactComponent as NomeDoComponente } from 'caminho_do_componente';
+
+
+/* SOBRE ESCREVE UM BOTAO PRA DIFERENTES LUGARS*/
+
+.botaoLer.lg
+
+class -> condicional passando por props o nome da class adicional 
+
+     <button className={`${style.botaoLer} ${style[props.tamanho]}`} 
+
+se vem tamnho = {""} ou tamanho = {"lg"}
+
+
+        const navega = useNavigate();
+onClick={()=>navega("/")} 
+ ou
+
+onClick={()=>navega(-1)} - volta uma pagina anterior 
+
+
+
+Route 
+
+# dependeciass adicionadas
+
+        "react-markdown": "^8.0.7",
+        "react-router-dom": "^6.14.1",
+
 
 # ReactMarkdown
  npm intall react-markdown

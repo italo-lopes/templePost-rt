@@ -35,6 +35,17 @@ console.log(window.location)
 // 13  style={ {backGround :`url(${fotoCapa})`} } >
 
 // 14 rotas dinamica com useParams
+
+// 15 volta pagina import {useNavigate} from 'react-router-dom'
+//        const navagação = useNavigate()
+
+//onClick={()=>navega("/")} ou //onClick={()=>navega(-1)}
+
+//ao da cero post -  menu+ (post) banner +outlet (paginaPadrao path="*"  + posModelo index) +rodade
+
+//e ao erro - post =  menu+(post) erro + rodape
+// <Route path="posts/:postId/*" element={<Post/>}/>
+//quando tite um route chamando no comp outro route pai usar o *
 function AppRoutes() {
   return (
   <BrowserRouter>
@@ -45,9 +56,8 @@ function AppRoutes() {
         {/* <Route path="/" element={<PaginaInicial />} />  */}
         <Route index element={<PaginaInicial />} />
         <Route path="sobremim" element={<SobreMim />} />
-        <Route path="posts/:postId" element={<Post/>}/>
       </Route>
-
+      <Route path="posts/:postId/*" element={<Post/>}/>
       <Route path = "*" element={<NaoEncontrada/>} />
     </Routes>
     <Rodape/>

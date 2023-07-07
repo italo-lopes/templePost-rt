@@ -53,6 +53,15 @@
     overflow-x: auto;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+}
+
+
+
 @media (max-width: 1100px) {
     .postmarkdowncontainer p {
         margin-bottom: 2rem;

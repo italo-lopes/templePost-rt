@@ -1,11 +1,15 @@
 import React from 'react';
 import style from './NaoEncontrado.module.css';
 import erro404 from 'assets/imagens/erro_404.png';
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
+import Botao from 'componetes/Botao'
 
 const NaoEncontrada = () => {
 
-
+    const navega = useNavigate();
+    console.log("================")
+    console.log(navega)
+    console.log("================")
     return ( 
         <>
         <div className={style.conteudoContainer}>
@@ -24,10 +28,17 @@ const NaoEncontrada = () => {
                 volte paa a pagina Inicial
             </p>
 
-            <div className={style.botaoContainer}>
-                <Link to={"/"}>
-                <button>Voltar</button>
-                </Link>
+            <div 
+            className={style.botaoContainer}
+            onClick={()=>navega("/")}
+            >
+                {/* <Link to={"/"}> */}
+                <Botao
+                tamanho={'lg'}
+                >
+                                Voltar
+                </Botao>
+                {/* </Link> */}
             </div>
 
             <img
